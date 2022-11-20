@@ -6,7 +6,10 @@ public class Fish implements Animals {
         this.name = name;
         this.feature = feature;
         }
-
+    @Override
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String breathe() {
@@ -22,4 +25,6 @@ public class Fish implements Animals {
     public String toString() {
         return name + ": " + breathe()+", " + move() + ", " + feature;
     }
+
+
 }
